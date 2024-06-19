@@ -1,0 +1,1 @@
+<span class="label label-{{ ($form->authenticated ? 'success' : 'info') }}">{{ $form->authenticated ? 'کاربران' : 'عمومی' }}</span>

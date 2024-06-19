@@ -1,0 +1,231 @@
+.menu-mob .debugger {
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+
+.menu-mob .nav-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+
+}
+.menu-mob .nav-wrapper.show-menu {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.menu-mob .js-nav-toggle {
+ position: absolute;
+	top: -12px;
+	right: 5px;
+	width: 43px;
+	height: 36px;
+	margin: 15px 0 0 15px;
+	display: block;
+	float: left;
+	padding: 0;
+	color: #f6f6f6;
+	border: 2px solid #fff;
+
+}
+.menu-mob .js-nav-toggle span {
+  position: relative;
+  background-color: #fff;
+  height: 2px;
+  display: block;
+  width: 22px;
+  margin: 17px auto 0;
+  transition: all 0.4s;
+  transition-delay: 0.3s;
+}
+.menu-mob .js-nav-toggle span:before, .js-nav-toggle span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 0;
+  left: 1px;
+  top: 50%;
+  margin-top: -7px;
+  transition: all 0.3s 0.3s;
+}
+.menu-mob .js-nav-toggle span:before {
+  box-shadow: 0 14px 0 1px #345;
+}
+.menu-mob .js-nav-toggle span:after {
+  box-shadow: 0 0 0 1px #345;
+}
+.menu-mob .show-menu .js-nav-toggle span {
+  background-color: transparent;
+}
+.menu-mob .show-menu .js-nav-toggle span:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.menu-mob .show-menu .js-nav-toggle span:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu-mob .show-menu .js-nav-toggle span:before, .show-menu .js-nav-toggle span:after {
+  margin-top: 0;
+  box-shadow: 0 0 0 1px #345;
+}
+
+.menu-mob nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 5px 1px #ddd;
+  background-color: #fff;
+}
+.menu-mob nav .nav-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.45em 0.6em;
+  background-color: #f5363e;
+  color: #fff;
+  z-index: 100;
+  cursor: pointer;
+  transition: backgroun-color 0.2s;
+}
+nav .nav-toggle.back-visible .nav-back {
+  opacity: 1;
+}
+
+.menu-mob nav .nav-title {
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  padding-left: 0.7em;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.menu-mob nav .nav-back {
+  display: inline-block;
+  position: relative;
+ width: 87px;
+  height: 30px;
+  vertical-align: middle;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.menu-mob nav .nav-back:before, nav .nav-back:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+}
+.menu-mob nav .nav-back:before {
+	 right: 8%;
+	width: 9px;
+	height: 9px;
+	border: 2px solid currentcolor;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	-webkit-transform: translate(0%, -50%) rotateZ(130deg);
+	transform: translate(0%, -50%) rotateZ(130deg);
+}
+.menu-mob nav .nav-back:after {
+ right: 8px;
+width: 15px;
+height: 2px;
+background-color: currentcolor;
+margin-top: -1px;
+}
+.menu-mob nav a {
+    display: block;
+	position: relative;
+	padding: 0.3em 0.6em;
+	color: #000;
+	text-decoration: none;
+	transition: color 0.15s, background-color 0.15s;
+	line-height: 30px;
+	font-size: 10pt;
+}
+
+.menu-mob nav ul {
+  list-style: none;
+  padding: 45px 0 0;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.menu-mob nav ul ul {
+  display: none;
+  left: 100%;
+}
+.menu-mob nav li.has-dropdown > a {
+  padding-right:1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu-mob nav li.nav-dropdown-open ul {
+  display: block;
+}
+#categori-menu {
+   background-color: #1aac1a;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 10px auto !important;
+    border-radius: 2px;
+    line-height: 35px;
+ 
+}
+.fa-list::before {
+    font-size: 15px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+#categori-menu:hover {
+    cursor: pointer;
+}
+.icon-list {
+    color: #fff;
+    z-index: 999;
+    position: relative;
+    float: left;
+    vertical-align: middle;
+    line-height: 40px;
+}
+.nav-title {
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 22px;
+}
+.has-dropdown a span {
+    display: inline-block;
+}
+.img-menu-categori {
+    width: 50px;
+    height: 40px;
+    float: left;
+}
+.nav-back {
+    font-size: 11px;
+    font-weight: normal !important;
+    padding-right: 30px;
+    line-height: 28px;
+	text-shadow:none !important;
+}

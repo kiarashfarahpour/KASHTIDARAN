@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]	#start of protect from resource copy	RewriteCond %{HTTP_USER_AGENT} ^HTTrack [OR]	RewriteCond %{HTTP_USER_AGENT} ^SiteSucker [OR]	RewriteCond %{HTTP_USER_AGENT} ^WebZip [OR]	RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR]	RewriteCond %{HTTP_USER_AGENT} ^Zeus	RewriteRule ^.*$ no_download.html [L]	#end of protect from resource copy
+</IfModule>

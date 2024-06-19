@@ -1,0 +1,8 @@
+/* TEAM */
+Company: Vediana
+Site: https://vediana.com
+Twitter: https://twitter.com/vediana2
+Location: Tehran, Iran.
+
+/* SITE */
+Framework: Laravel.
